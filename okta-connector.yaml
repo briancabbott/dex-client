@@ -1,0 +1,11 @@
+connectors:
+- type: saml
+  id: saml
+  name: Okta
+  config:
+    ssoURL: ( "Identity Provider Single Sign-On URL" )
+    caData: ( base64'd value of "X.509 Certificate" )
+    redirectURI: http://127.0.0.1:5556/dex/callback
+    usernameAttr: name
+    emailAttr: email
+    groupsAttr: groups
